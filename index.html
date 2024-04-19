@@ -10,42 +10,28 @@
 </head>
 <body>
     <div class="greetings">
-        
-        <span>M</span>
-        <span>A</span>
-        <span>Y </span>
-        <span> </span>
         <span>H</span>
-        <span>E</span>
-        <span>A</span>
-        <span>L</span>
-        <span>I</span>
-        <span>N</span>
-        <span>G </span>
+        <span>i</span>
         <span> </span>
-        <span>F</span>
-        <span>I</span>
-        <span>N</span>
-        <span>D </span>
-        <span> </span>
-        <span>Y</span>
-        <span>O</span>
-        <span>U </span>
-        <span> </span>
-        <span>K</span>
-        <span>I</span>
-        <span>E</span>
-        <span>T</span>
-        <span>H </span>
+        <span>G</span>
+        <span>e</span>
+        <span>m</span>
+        <span>m</span>
+        <span>a</span>
     </div>
     <div class="description">
-        <span>click mo na lang beh wag na pachossy AHHAHAHHAAH </span>
+        <span>hi sana magustuhan mo flowers for you po</span>
     </div>
     <div class="button">
-        <button>
-            <a href="flower.html">Click mo nga</a>
+        <button onclick="playSong()">
+            <a href="flower.html">ito ang iclick mo ah</a>
         </button>
-        
     </div>
+    <audio id="song" src="bruno-mars-give-you-a-flower.mp3" preload="auto"></audio>
+    <script>
+        function playSong() {
+            document.getElementById('song').play();
+        }
+    </script>
 </body>
 </html>
