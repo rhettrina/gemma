@@ -12,7 +12,7 @@
     <div class="greetings">
         <span>H</span>
         <span>i</span>
-        <span> </span>
+        <span>&nbsp;</span>
         <span>G</span>
         <span>e</span>
         <span>m</span>
@@ -20,17 +20,19 @@
         <span>a</span>
     </div>
     <div class="description">
-        <span>hi sana magustuhan mo flowers for you po</span>
+        <span>flowers For You</span>
     </div>
     <div class="button">
         <button onclick="playSong()">
-            <a href="flower.html">ito ang iclick mo ah</a>
+            <a href="flower.html">Click mo magugulat ka</a>
         </button>
     </div>
-    <audio id="song" src="bruno-mars-give-you-a-flower.mp3" preload="auto"></audio>
+    <audio id="song" src="Bruno Mars When I Was Your Man.mp3" preload="auto"></audio>
     <script>
         function playSong() {
-            document.getElementById('song').play();
+            var song = document.getElementById('song');
+            song.currentTime = 50;
+            song.play();
         }
     </script>
 </body>
