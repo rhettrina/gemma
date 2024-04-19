@@ -8,7 +8,15 @@
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>flowers</title>
 </head>
+
+
 <body class="container">
+
+  <audio id="backgroundMusic" autoplay>
+    <source src="flower.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
@@ -307,6 +315,13 @@
       </div>
     </div>
     
-    <script src="main.js"></script>
+    <script>
+      // Set the initial time to 50 seconds
+      setTimeout(function(){
+          var audio = document.getElementById("backgroundMusic");
+          audio.currentTime = 50;
+      }, 0); // Use 0 delay to run immediately after the page loads
+  </script>
+  <script src="main.js"></script>
   </body>
 </html>
